@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #fff;
+  --secondary-color: #292929;
+}
+body {
+  background-color: var(--primary-color);
+}
+.header {
+  background-color: var(--secondary-color);
+  height: 140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header button {
+  background: black;
+  color: #fff;
+  outline: none;
+  margin-left: 96px;
+  border: 1px solid #fff;
+  font-size: 28px;
+  padding: 8px;
+}
+
+.search-btn {
+  display: flex;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container p {
+  margin-top: 98px;
+  margin-left: 170px;
+  font-size: 40px;
+}
+
+.movie-background {
+  position: relative;
+  margin-top: -30px;
+}
+
+
+
+.movie-background p {
+  width: 490px;
+  height: 282px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 72px;
+  position: absolute;
+  line-height: 93.74px;
+  letter-spacing: -5%;
+  left: 77px;
+  bottom: 159px;
+}
+
+.movie-background img {
+  width: 100%;
+}
+
+
+.inputText {
+  outline: none;
+  width: 1306px;
+  height: 54px;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid #000000;
+}
+.inputText::placeholder {
+  color: var(--secondary-color);
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  width: 280px;
+  background-color: #000000;
+  margin: 97px 13px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  position: relative;
+}
+.movie .poster {
+  width: 100%;
+  height: 250px;
+}
+
+.title {
+  color: #fff;
+}
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details .box {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.movie-details .title {
+  width: 160px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.notfound {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+
+
+
+@media (max-width: 930px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header button {
+        padding: 15px;
+        margin-left: 21px;
+    }
+
+    .inputText {
+      width: 680px;
+      height: 54px
+    }
+  
+    .form-container p {
+      margin-left: 90px;
+    }
+  
+    .movie {
+      width: 200px;
+    }
+
+  
+    .movie-background p {
+      text-align: center;
+      width: 490px;
+      height: 282px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 72px;
+      position: absolute;
+      line-height: 93.74px;
+      letter-spacing: -5%;
+      top: 98px;
+      left: 220px;
+      bottom: 159px;
+    }
+  
+    .movie-background img {
+      height: 550px;
+    }
+  }
+  
+
+  @media (max-width: 700px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header button {
+        padding: 15px;
+        margin-left: 20px;
+    }
+
+    .inputText {
+      width: 580px;
+      height: 54px
+    }
+  
+    .form-container p {
+      margin-left: 100px;
+    }
+  
+    .movie {
+      width: 200px;
+    }
+
+  
+    .movie-background p {
+      text-align: center;
+      width: 490px;
+      height: 282px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 72px;
+      position: absolute;
+      line-height: 93.74px;
+      letter-spacing: -5%;
+      top: 98px;
+      left: 130px;
+      bottom: 100px;
+    }
+  
+    .movie-background img {
+        width: 100%;
+      height: 500px;
+    }
+  }
+  
+
+  @media (max-width: 380px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header button {
+        padding: 12px;
+        margin-left: 21px;
+        font-size: 18px;
+    }
+
+    .inputText {
+      width: 265px;
+    }
+  
+    .form-container p {
+      margin-left: 30px;
+    }
+  
+    .movie {
+      width: 200px;
+    }
+  
+    .movie-background p {
+      text-align: center;
+      width: 273px;
+      height: 72px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 28px;
+      position: absolute;
+      line-height: 36.46px;
+      letter-spacing: -5%;
+      top: 98px;
+      left: 43px;
+      bottom: 87px;
+    }
+  
+    .movie-background img {
+      height: 257px;
+    }
+  }
+
